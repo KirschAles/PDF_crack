@@ -8,7 +8,7 @@ def main():
     for num in range(10000):
         a = reader.decrypt('{0:04d}'.format(num))
         if a != 0:
-            print('Password is:', num)
+            print('Password is: {0:04d}'.format(num))
 
 
 if __name__ == '__main__':
