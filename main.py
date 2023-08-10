@@ -6,9 +6,9 @@ def main():
     filename = sys.argv[1]
     reader = PdfReader(filename)
     for num in range(10000):
-        a = reader.decrypt("{0:04d}".format(num))
+        a = reader.decrypt('{0:04d}'.format(num))
         if a != 0:
-            print(num)
+            print('Password is:', num)
 
 
 if __name__ == '__main__':
